@@ -31,6 +31,8 @@ int ngaytrongnam(int ngay, int thang, int nam){
 	return ntn;
 }
 
+
+
 int main (){
 	int ngay, thang, nam;
 	do{
