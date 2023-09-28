@@ -24,8 +24,8 @@ int main(){
 	
 	printf("\ns_1 = %s", s_1);
 	printf("\ns_2 = %s", s_2);
-	//strcat(s_1, s_2);
-	my_strcat(s_1, s_2)
+	strcat(s_1, s_2);
+	//my_strcat(s_1, s_2);
 	printf("\ns_1 = %s", s_1);
 	
 	
