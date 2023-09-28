@@ -17,7 +17,7 @@ void nhapmang(int x[], int n){
 
 void xuatmang(int x[], int n){
 	int i;
-	printf("Mang vua nhap vao la : ");
+	printf("Gia tri cua mang la : ");
 	for(i=0; i<n; i++){
 		printf("%d", x[i]);
 	}
@@ -43,7 +43,7 @@ void xoamangtheogiatri(int x[], int n){
 	int gt;
 	int i;
 	printf("Nhap vao gia tri can xoa: ");
-	scanf("%d", &n);
+	scanf("%d", &gt);
 	for(i =0; i<n; i++){
 		if(x[i]==gt){
 			xoamangtaivitri(x, n, i);
@@ -60,5 +60,4 @@ int main(){
 	xuatmang(a, n);
 	
 	return 0;
-	//xoamangtaivitri(a, n);
 }
