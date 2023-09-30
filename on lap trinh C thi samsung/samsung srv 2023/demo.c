@@ -16,7 +16,7 @@ void nhap(int a[], int n)
 void xuat(int a[], int n)
 {
     int i;
-    printf("Mang vua nhap la: \n");
+    printf("\nMang vua nhap la: \n");
     for (i = 0; i < n; i++)
     {
         printf("%d ", a[i]); // Them khoang trang sau moi phan tu
@@ -49,7 +49,7 @@ int max(int a[], int n)
 // Tim gia tri nho nhat trong mang
 int min(int a[], int n)
 {
-    int min = a[0];
+    int min = a[0];//gia su phan tu nho nhat la phan tu dau tien cua mang
     int i;
     for (i = 1; i < n; i++)
     {
@@ -58,6 +58,20 @@ int min(int a[], int n)
     }
     return min;
 }
+
+// In ra so luong so chan va so le trong mang
+
+int dem_chan_le(int a[], int n){
+	int chan = 0, le = 0;
+	int i;
+	for(i=0; i<n; i++){
+		if(a[i]%2==0)
+			++chan;
+		else  ++le;
+	}
+	printf("%d %d",chan, le);
+}
+
 
 // Sap xep mang
 void swap(int *a, int *b)
@@ -90,17 +104,15 @@ int main()
     int n, i, a[1000];
     scanf("%d", &n);
     nhap(a, n);
+    xuat(a, n);
     sapxeptang(a, n);
     xuat(a, n);
+    dem_chan_le(a, n);
 
     printf("\nTong cac phan tu trong mang la : %d", sum(a, n));
     printf("\nGia tri lon nhat trong mang la: %d", max(a, n));
     printf("\nGia tri nho nhat trong mang la: %d", min(a, n));
     printf("\nMang tang dan la : ");
-    for (i = 0; i < n; i++)
-    {
-        printf("%d ", a[i]);
-    }
 
     return 0;
 }
