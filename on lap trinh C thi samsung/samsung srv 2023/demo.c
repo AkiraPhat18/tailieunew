@@ -82,7 +82,7 @@ void swap(int *a, int *b)
 }
 
 void sapxeptang(int x[], int n)
-{
+{  
     int i;
     for (i = 0; i < n - 1; i++)
     {
@@ -104,15 +104,15 @@ int main()
     int n, i, a[1000];
     scanf("%d", &n);
     nhap(a, n);
-    xuat(a, n);
+    //xuat(a, n);
     sapxeptang(a, n);
     xuat(a, n);
-    dem_chan_le(a, n);
+    //dem_chan_le(a, n);
 
     printf("\nTong cac phan tu trong mang la : %d", sum(a, n));
     printf("\nGia tri lon nhat trong mang la: %d", max(a, n));
     printf("\nGia tri nho nhat trong mang la: %d", min(a, n));
-    printf("\nMang tang dan la : ");
+    //printf("\nMang tang dan la : ");
 
     return 0;
 }
